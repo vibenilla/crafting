@@ -19,6 +19,7 @@ dependencies {
     compileOnly("net.minestom:minestom:2026.01.08-1.21.11")
     compileOnly("it.unimi.dsi:fastutil:8.5.18")
 
+    // Unit testing
     testImplementation("net.minestom:minestom:2026.01.08-1.21.11")
     testImplementation("it.unimi.dsi:fastutil:8.5.18")
     testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")

@@ -63,11 +63,11 @@ repositories {
 }
 
 dependencies {
-    compileOnly("net.minestom:minestom:2026.01.08-1.21.11")
+    compileOnly("net.minestom:minestom:2026.08.28-26.2")
     compileOnly("it.unimi.dsi:fastutil:8.5.18")
 
     // Unit testing
-    testImplementation("net.minestom:minestom:2026.01.08-1.21.11")
+    testImplementation("net.minestom:minestom:2026.08.28-26.2")
     testImplementation("it.unimi.dsi:fastutil:8.5.18")
     testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.11.4")

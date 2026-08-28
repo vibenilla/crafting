@@ -72,6 +72,7 @@ repositories {
 dependencies {
     compileOnly("net.minestom:minestom:$minestomVersion")
     compileOnly("it.unimi.dsi:fastutil:8.5.18")
+    compileOnly("org.slf4j:slf4j-api:2.0.17")
 
     // Unit testing
     testImplementation("net.minestom:minestom:$minestomVersion")

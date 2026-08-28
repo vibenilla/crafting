@@ -1,3 +1,6 @@
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+
 plugins {
     `java-library`
     `maven-publish`
@@ -5,7 +8,11 @@ plugins {
 
 description = "A library for Minestom crafting"
 group = "rocks.minestom"
-version = "0.1.0"
+
+val minestomVersion = "2026.08.28-26.2"
+val mcVersion = minestomVersion.substringAfter("-")
+val date = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy.MM.dd"))
+version = "$date-$mcVersion"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
@@ -63,11 +70,11 @@ repositories {
 }
 
 dependencies {
-    compileOnly("net.minestom:minestom:2026.08.28-26.2")
+    compileOnly("net.minestom:minestom:$minestomVersion")
     compileOnly("it.unimi.dsi:fastutil:8.5.18")
 
     // Unit testing
-    testImplementation("net.minestom:minestom:2026.08.28-26.2")
+    testImplementation("net.minestom:minestom:$minestomVersion")
     testImplementation("it.unimi.dsi:fastutil:8.5.18")
     testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.11.4")
